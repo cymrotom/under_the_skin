@@ -10,12 +10,19 @@
    Base styles: opinionated defaults
    ========================================================================== */
 
+
+
 html {
-    color: #222;
-    font-size: 1em;
-    line-height: 1.4;
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 
+body {
+    margin: 0;
+    padding: 0;
+}
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
@@ -98,6 +105,38 @@ textarea {
    ========================================================================== */
 
 
+
+header .page-header  {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.underlay {
+    position: relative;
+    z-index: -10;
+    display: block;
+    width: 100%;
+}
+
+
+}
+h1 {
+    color: white;
+}
+
+.main-content {
+    font-family: "Arial", sans-serif;
+}
 
 
 
