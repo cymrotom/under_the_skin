@@ -10,7 +10,7 @@
         <link rel="manifest" href="site.webmanifest">
         <link rel="apple-touch-icon" href="icon.png">
         <!-- Place favicon.ico in the root directory -->
-
+        <link href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet">
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
     </head>
@@ -24,29 +24,40 @@
             </div>
         </header>
         <nav class="main-nav">
-        	<ul>
+            
+            <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Shop</a></li>
                 <li><a href="#">Mission</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Journal</a></li>
                 <li><a href="#">Contact</a></li>
-                <li><img class="cart"><img src="img/placeholder.png" alt="shopping cart"></li>     
+                
             </ul>
-               
+        <a href="#"><img src="img/cart-white.png" alt="shopping cart"></a>
+            
         </nav>
 
 
         <section class="main-content">
+          <div class="main-content-overlay">
             <h2>An interactive print series celebrating and raising awareness for some of the world’s most endangered and vulnerable animals.</h2>
             <p>Our limited edition screen prints are a hand-crafted celebration of species from across the globe, with a powerful underlying message. Under UV light, the phosphorescent skeleton is exposed; all that remains when a species falls into the darkness of extinction.
             </p>
+        </div>
+        <div class="main-content-underlay">
             <img src="img/UTS-UV-CONCEPT-Colour-Correct-Daylight-Layer-1920x1322.jpg" alt="three animals">
         </section>
 
-        <section class="portraits-for-shipping">
-            <img class="portraits" src="img/UTS-package-v8-1920x1280.jpg" alt="portraits for shipping">
+        <section class="portraits">
+           <div class="portraits-overlay">
             <p>Every print is accompanied by a UV torch, makers booklet animal charity card.</p>
+
+            </div>
+            <div class="portraits-underlay">
+            <img class="portraits" src="img/UTS-package-v8-1920x1280.jpg" alt="portraits for shipping">
+        </div>
+
         </section>
         <section class="protects">
             <h2>This Print Protects</h2>
@@ -56,18 +67,47 @@
             <img class="posters" src="img/Poster-selection-2.jpg" alt="Poster Selection">
         </section>
         <section class="latest-prints">
-            <h2>Limited edition &amps; hand made</h2>
+            <h2>Limited edition &amp; hand made</h2>
             <h3>Our Latest Prints</h3>
 
         </section>
         <section class="charities">
-            We donate 20% of proceeds towards
-Dedicated Charities
-We donate 20% of our print proceeds to our chosen ‘on-the-ground’ charities, each dedicated to saving a specific species.
-We believe in more than just ‘raising awareness’ of endangered species, we believe in taking action, positive change and education.
+         <h3>We donate 20% of proceeds towards</h3>
+        <h2>Dedicated Charities</h2>
+        <p>We donate 20% of our print proceeds to our chosen 'on-the-ground' charities, each dedicated to saving a specific species.</p>
+        <p>We believe in more than just ‘raising awareness’ of endangered species, we believe in taking action, positive change and education.</p>
         </section>
 
+        
 
+            <section class="our-mission">
+            <img>    
+            <h2>OUR MISSION</h2>
+            <p>Our mission is to use fresh and playful design to engage, educate and promote the work of grassroots charities dedicated to protecting vulnerable animal populations.</p>
+            <btn> OUR MISSION
+            </section>
+
+        <section class="brothers">
+            <h2>BROTHERS BY NATURE</h2>
+            <p>Under the Skin was launched by designer duo and brothers Ed &amp; James Harrison. The project began as a means to celebrate the natural world that they both love and enjoy together recreationally.</p>
+        </section>
+
+        <section class="pullquote">
+        <cite>It’s surely our responsibility to do everything within our power to create a planet that provides a home not just for us, but for all life on Earth.</cite>
+        <p>Sir David Attenborough, Planet Earth II Finale
+
+        </section>
+
+        <footer class="page-footer">
+            <section class="social">
+                <a href="#"><img></a>
+            </section>
+            <section class="footer-nav">
+                  Shipping Privacy Policy FAQ Terms &amp; Conditions 
+
+            </section>
+
+        </footer>
         
         <script src="js/vendor/modernizr-3.5.0.min.js"></script>
         <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
