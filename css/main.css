@@ -148,13 +148,15 @@ header img {
 }
 .main-nav {
     text-align: left;
+    z-index: 100;
+    
 }
 
 .main-nav ul {
     background-color: #222222;
     color: #fff;
     height: 53px;
-    
+    z-index: 100;
     font-weight: bold;
     font-size: 1.2em;
     margin: 0;
@@ -168,10 +170,25 @@ header img {
 }
 
 .btn {
-    background-color: #eb4d5c;
+    background-color: #eb4d5c; /* Green */
+    border: none;
+    border-radius: 10px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
 
 }
 
+.btn a {
+    color: white;
+}
+
+.btn a:hover {
+    color: #fff;
+}
 
 .main-nav li {
     list-style: none;
@@ -185,6 +202,7 @@ header img {
     top: 0;
     right: 0;
     padding: 0.5em;
+    z-index: 10;
 }
 a {
     text-decoration: none;
@@ -200,14 +218,15 @@ a:hover {
 
 .main-content {
     padding: 0;
-    margin: 0, auto;
+    margin: 0;
     text-align: center;
     background-color: #e9e9e9;
     position: relative;
+    overflow: hidden;
 }
 
 .main-content-overlay {
-   width: ;
+   
    position: absolute;
    top: 0;
    left: 0;
@@ -221,7 +240,10 @@ a:hover {
 
 .main-content-underlay {
     z-index: -10;
-    transform: translateY(25%);
+    transform: translateY(10%);
+}
+
+
 }
 
 .main-content h2 {
@@ -244,6 +266,7 @@ a:hover {
 
 .portraits {
     position: relative;
+    margin: 0;
 }
 
 .portraits-overlay {
@@ -251,17 +274,20 @@ a:hover {
    position: absolute;
    bottom: 0;
    left: 0;
-   z-index: 10;
+   z-index: 5;
    width: 50%;
    transform: translate(5%, -30%);
-   font-family: "Georgia", serif;
-   font-style: italic;
-   font-size: 1.2em;
+   
 
 }
 
-.portraits-overlay p {
-    width: 60%;
+.portraits-overlay h2 {
+   width: 60%;
+   font-family: "Georgia", serif;
+   font-style: italic;
+   font-weight: normal;
+   font-size: 1.2em;
+
 }
 .portraits-underlay {
     z-index: -10;
@@ -275,8 +301,99 @@ a:hover {
     width: 100%;
 }
 
-.charities {
+.protects {
+    width: 100%;
+    object-fit: fill;
+   
+}
+
+.left-column {
+    background-color: #85a952;
+    width: 37.5%;
+    float: left;
+    min-height: 360px;
+    text-align: left;
+    padding-left: 2.875em;
+
+}
+
+.left-column h2 {
+    font-size: 2em;
+    font-weight: bold;
+    color: #c2d4a8;
+}
+
+.left-column h3 {
+    font-size: 1.5em;
+    color: white;
+}
+
+.left-column p {
+    font-family: "Georgia", serif;
+    font-style: italic;
+    color: white;
+}
+
+.middle-column img {
+    max-width: 27%;
+    float: left;
+    object-fit: contain;
+}
+
+.right-column img {
+    max-width: 35.5%;
+    float: left;
+    object-fit: fill;
+}
+
+
+
+.latest-prints {
+   clear: both;
+   background-color: #e9e9e9;
+   padding-bottom: 2em;
+   
+}
+
+.latest-prints h2 {
+    padding: 0;
+    font-size: 3em;
+    }
+
+.latest-prints h3 {
+    clear: both;
+    font-style: italic;
+    font-family: serif;
+    padding-top: 1em;
+    font-size: 2em;
+    color: #888;
+
+    }
+
+
+.latest-prints img {
+    border: 3px solid white;
+    margin: auto;
+    width: 100%;
     
+    
+
+}
+
+.print {
+    background-color: #e9e9e9;
+    margin: auto;
+    width: 33%;
+    float: left;
+    padding: 10px;
+}
+
+.print h3 {
+
+}
+.charities {
+    clear: both;
+
 
 }
 
@@ -285,16 +402,200 @@ a:hover {
 }
 
 .charities h3 {
-    font-family: 'PT Serif', serif;
+    font-family: serif;
     font-style: italic;
     font-size: 1.5em;
     font-weight: normal;
     color: #aaa;
-    ;
+}
+
+.charities p {
+    margin: auto;
+    width: 40%;
+    line-height: 1.5;
+    padding: 1em;
+}
+
+.charity-icons {
+    padding-top: 20px;
+}
+
+.icon-box {
+    border: 1px solid black;
+    width: 14.28%;
+    float: left;
+    height: 12.31em;
+    margin: auto;
+    padding-top: 30px;
+}
+
+.icon-box img {
+    width: 75%;
+    object-fit: cover;
+    
 }
 
 
 
+.our-mission {
+    clear: both;
+    background-color: #e9e9e9;
+    padding-bottom: 45px;
+    font-size: 1em;
+    line-height: 1.5;
+    
+}
+
+.our-mission h2 {
+    font-size: 2em;
+}
+
+
+
+.our-mission-right {
+    width: 50%;
+    float: left;
+    padding: 12em;
+    }
+.our-mission img {
+    float: left;
+    width: 50%;
+}
+.our-mission-btn {
+    padding-bottom: 20px;
+}
+
+
+
+
+.social {
+    background-color: #222222;
+    color: white;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px;
+    position: relative;
+    
+}
+
+.social img {
+    width: 10%;
+    float: right;
+    padding-right: 20px;
+}
+
+
+
+
+.social i {
+    color: white;
+    font-size: 2em;
+}
+
+.social ul{
+    list-style: none;
+    text-align: left;
+    margin: auto;
+    padding-top: 20px;
+    float: left;
+
+}
+
+.social li {
+    text-decoration: none;
+    display: inline-block;
+    padding-left: 10px;
+    
+
+}
+
+.social a:hover {
+    color: white;
+}
+
+.logo img {
+   position: absolute;
+   bottom: 50;
+   left: 50;
+   width: 100px;
+   transform: translate(-150%,-25%);
+   z-index: 10;
+   padding: 20px;
+
+
+
+}
+
+.page-footer {
+  
+    background-color: #000;
+    color: white;
+    margin: auto;
+    width: 100%;
+    
+}
+
+.page-footer ul {
+  margin: auto;
+  clear: both;
+  padding: 1em;
+  list-style: none;
+
+  }
+.page-footer li {
+    padding: 1em;
+    text-decoration: none;
+    display: inline;
+}
+
+.page-footer i {
+    color: white;
+    font-size: 0.5em;
+}
+
+.pullquote img {
+    width: 10%;
+    line-height: 0;
+
+
+}
+
+.menu-bottom {
+    text-align: center;
+    padding-top: 50px;
+    width: 40%;
+    margin: auto;
+    color: #666;
+
+}
+
+.menu-bottom ul {
+    text-align: center;
+}
+.pullquote  {
+    margin: 0;
+    clear: both;
+    line-height: 0;
+    background-color: #bca566;
+    padding: 20px;
+    color: white;
+
+}
+
+.pulltext {
+    width: 50%;
+    font-size: 2em;
+    margin: auto;
+    line-height: 1;
+    font-weight: bold;
+}
+
+.source {
+    font-family: serif;
+    font-style: italic;
+    font-size: 1.5em
+    
+}
 
 
 
